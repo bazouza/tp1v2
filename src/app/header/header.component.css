@@ -1,0 +1,61 @@
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Blue gradient */
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* List Item Styles */
+nav ul li {
+  margin: 0 25px;
+}
+
+/* Logo Style */
+nav ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+}
+
+/* Link Styles */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Links */
+nav ul li a:hover {
+  color: #ffaf7b; /* Soft peach */
+  transform: scale(1.1); /* Slight zoom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}

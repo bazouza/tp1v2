@@ -1,0 +1,62 @@
+/* Sidebar Styles */
+.sidebar {
+  background: linear-gradient(180deg, #2c3e50, #4ca1af); /* Gradient for a sleek look */
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow on the right */
+}
+
+/* Sidebar List Styles */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin: 15px 0; /* Consistent spacing between items */
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Sidebar Links */
+.sidebar a {
+  text-decoration: none;
+  color: #f0f0f0; /* Light color for readability */
+  display: block;
+  padding: 10px 0;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.sidebar ul li a:hover {
+  color: #2c3e50; /* Dark text on hover */
+  background-color: #ffffff; /* Highlight with white */
+  border-radius: 5px; /* Smooth rounded corners */
+}
+
+/* Last Item Adjustment */
+.sidebar ul li:last-child {
+  margin-bottom: 0; /* Clean look by removing extra space */
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Narrower sidebar for smaller screens */
+  }
+
+  .sidebar ul li {
+    font-size: 16px; /* Adjust font size for readability */
+  }
+}
